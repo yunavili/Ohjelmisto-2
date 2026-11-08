@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (placeholder) {
         placeholder.innerHTML = `
             <div class="nav-logo">
-                <a href="#">Logo</a>
+                <a href="tests.html">Tests! Check it</a>
             </div>
             <div class="nav-links">
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="products.html">Products</a>
                 <a href="contact.html">Contact</a>
             </div>

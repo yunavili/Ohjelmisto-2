@@ -6,27 +6,13 @@
 
 body {
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-color: #120b1a;
     color: #e2d9f3;
-}
-
-main {
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    min-height:700px;
-    background-image: linear-gradient(rgba(83, 49, 126, 0.5), rgba(26, 17, 37, 0.6)), url('imges/IMG_0183.PNG');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
 img {
@@ -42,15 +28,31 @@ ul, ol {
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: #ae97d8;
+}
 
+h1, h2, h3 {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 80px;
     color: #f3eeff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #d1c4e9;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 10px;
 }
 
 #nav-placeholder {
@@ -58,19 +60,116 @@ h1 {
     background-color: #2b173d;
     color: #e2d9f3;
     width: 1000px;
-    padding: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(174, 151, 216, 0.15);
 }
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+main {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    min-height: 700px;
+    background-image: linear-gradient(rgba(83, 49, 126, 0.5), rgba(26, 17, 37, 0.6)), url('imges/IMG_0183.PNG');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.banner-wrapper img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
+    margin-top: 20px;
+}
 
+.card {
+    background-color: rgba(43, 23, 61, 0.65);
+    border: 1px solid rgba(174, 151, 216, 0.15);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(174, 151, 216, 0.4);
+    background-color: rgba(43, 23, 61, 0.85);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #f3eeff;
+    font-weight: 700;
+    margin-top: 4px;
+    min-height: 56px; 
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    font-size: 14px;
+    color: #c9bcdc;
+    line-height: 1.5;
+}
+
+.card-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ae97d8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.image-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .image-wrapper img {
+    transform: scale(1.03);
 }
 
 .contact-section {
@@ -90,56 +189,4 @@ h1 {
 .contacts {
     max-width: 100%;
     flex: 0 0 auto;
-}
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 80px;
-}
-
-.image-wrapper {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-    overflow: hidden;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-}
-
-.banner-wrapper {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-    
-}
-
-.banner-wrapper img {
-    width: 100%;
-    height: 350px; 
-    object-fit: cover;
-    display: block;
-    
-}
-
-.halloween-btn {
-    background-color: #ff6600;
-    color: #1a1125;
-    font-weight: bold;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.halloween-btn:hover {
-    background-color: #ff8533;
-    transform: translateY(-2px);
 }
