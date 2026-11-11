@@ -2,7 +2,7 @@
 
 ### JS modules 1 and 2
 
-[My link to js modules folder at users.metropolia.fi](https://users.metropolia.fi/~yuliiai/js1-folder)
+[My link to js modules folder at users.metropolia.fi](https://users.metropolia.fi/~yuliiai/js1-folder/)
 
 Completed assignments:
 - Task 1: 1 p

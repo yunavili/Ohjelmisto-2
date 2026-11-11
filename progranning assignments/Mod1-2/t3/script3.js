@@ -9,9 +9,6 @@ let sum = num1 + num2 +num3;
 let product = num1 * num2 * num3;
 let average = sum/3;
 
-
-//const body = document.getElementsByTagName('body')[0];
-
 function appendParagraph(text, parent = document.body) {
     const p = document.createElement('p');
     p.textContent = text;

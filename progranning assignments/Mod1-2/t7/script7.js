@@ -5,7 +5,7 @@ const diceFaces = 6;
 let sum = 0;
 
 function rollingDices () {
-    if (isNaN(rolls) || rolls <= 0) {
+    if (isNaN(dicerolls) || dicerolls <= 0) {
         let text = document.createElement("p");
         document.body.appendChild(text);
         text.innerText = "Please enter a valid positive number.";
